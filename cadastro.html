@@ -1,0 +1,88 @@
+<html lang"pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> "voluntatios" </div>
+            <button class="menu-toggle" onclick="menu-tongle()"></button>
+            <ul id="navMenu">
+                <li>
+                    <a href="index.html">inicio</a>
+                </li>
+                <li>
+                    <a href="projeto.html">projeto</a>
+                </li>
+                <li>
+                    <a href="cadastro.html"class="active">cadastro</a>  
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero hero-cadastro">
+        <div class="hero-content"></div>
+        <h1>Cadastre-se como voluntario</h1>
+        <p>texto</p>
+    <div></div>
+    </section>
+<main>
+    <section class="signup-section">
+        <h2>cadstro de voluntario</h2>
+        <div class="sucess-message" id="successMessage">
+            <p>Obrigado por se cadastrar como voluntario!</p>
+        </div>
+        <form id="volunterForm" onsubmit="handleSubmit(event)"> 
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" placeholder=" (11) 99999-9999" required>
+
+            <label for="idade">idade:</label>
+            <input type="number" id="idade" name="idade" min="18" max="110
+            " required>
+
+            <label for="availability">Disponibilidade:</label>
+            <select id="availability" name="availability" required>
+                <option value="">Selecione</option>
+                <option value="Dias uteis">dias uteis</option>
+                <option value="final de semana">final de semana</option>
+                <option value="qualquer hora">qualquer hora</option>
+            </select>
+            <label for="interesses">Areas de interesse:</label>
+            <select id="interesses" name="interesses" required>
+                <option value="">Selecione</option>
+                <option value="ajuda a idosos">ajuda a idosos</option>
+                <option value="educação">educação</option>
+                <option value="meio ambiente">meio ambiente</option>
+                <option value="saude">saude</option>
+                <option value="outros">qualquer área</option>
+        <div> class="form-group">
+            <label for="experiencias">experiencias com caridade:</label>
+            <textarea id="experiencias" name="experiencias" placeholder="compartilhe sua motivação"></textarea>
+        </div>
+            <button type="submit" onclick="btn-primary">confirmar datos</button>
+        </fieldset>
+        </form>
+        <h2>Obrigado por se juntar a nós!</h2>
+    </section>
+    <div id="outros voluntarios">
+        <h2>voluntarios cadastrados</h2>
+        <ul id="volunterList"></ul>
+</main>
+</body>
+    <footer>
+        <section>
+            <h2>contato</h2>
+            <address>endereço:"descrição</address>
+        </section>
+        <p>&copy; sdp</p>
+    </footer>
+</html>
